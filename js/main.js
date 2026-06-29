@@ -42,3 +42,37 @@
     });
   });
 })();
+
+/* ============================================================
+   Preserve the home scroll position across a project visit.
+   On the home page we save the scroll offset when a project card
+   is opened, and restore it when the home page loads again (e.g.
+   after "← back to home"). Cleared after restoring so a manual
+   reload still starts at the top.
+   ============================================================ */
+(function () {
+  var KEY = "et-home-scroll";
+  var isHome = !!document.querySelector(".cards");
+  if (!isHome) return;
+
+  if ("scrollRestoration" in history) {
+    try { history.scrollRestoration = "manual"; } catch (e) {}
+  }
+
+  document.addEventListener("click", function (e) {
+    var link = e.target.closest ? e.target.closest("a.card") : null;
+    if (!link) return;
+    try { sessionStorage.setItem(KEY, String(window.scrollY || window.pageYOffset || 0)); } catch (err) {}
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var y = null;
+    try { y = sessionStorage.getItem(KEY); } catch (e) {}
+    if (y === null) return;
+    var top = parseInt(y, 10) || 0;
+    requestAnimationFrame(function () {
+      window.scrollTo(0, top);
+      try { sessionStorage.removeItem(KEY); } catch (e) {}
+    });
+  });
+})();
