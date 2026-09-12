@@ -2,16 +2,16 @@
 **PRODUCT DESIGNER**
 
 ## Contacto
-Huancayo, Perú  
-betzyeliane@gmail.com  
-+51 999 846 464  
+Huancayo, Perú<br>
+betzyeliane@gmail.com<br>
++51 999 846 464<br>
 [LinkedIn](https://www.linkedin.com/in/elianetapia) · [Portfolio](https://elianetapia.com)
 
 ## Perfil
 Product Designer con 5 años de experiencia en fintech, deportes y salud y bienestar. Diseño productos claros y fáciles de usar para equipos de EE. UU. y trabajo de cerca con ingeniería, desde las primeras ideas hasta producción.
 
 ## Experiencia
-**Ravn · Product Designer**  
+**Ravn · Product Designer**<br>
 Mayo 2021 - Agosto 2026 · Remoto
 
 ### Plataforma de comercio y administración multisede
