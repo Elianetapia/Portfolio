@@ -63,3 +63,17 @@ The toggle in the top-right is wired up: any text with a `data-es="..."` attribu
 ## Editing
 - **Colors / fonts / spacing:** the top of `css/styles.css` (`:root`) — change once, updates everywhere.
 - **Text:** edit it directly in the `.html` files. To keep the Spanish version in sync, update both the visible text and its `data-es="..."`.
+
+## Resume downloads
+
+The homepage's About and Contact sections link to `resumes/Eliane_Tapia_CV_ES.pdf`.
+The English interface labels this download `(ES)` because the PDF is in Spanish.
+The accompanying Markdown file preserves the editable Spanish content. The PDF follows
+the updated English resume's single-column structure and includes the supplied photo.
+
+## Current homepage
+
+Intro → About / Projects → How I work → Contact. About and Projects share equal-width
+columns on desktop; project cards use contextual device mockups. Navigation tracks the
+visible section, and EN/ES switches preserve the layout. Generated mockup provenance is
+recorded in `images/mockups/README.md`. Local PDF previews and build files are ignored.
