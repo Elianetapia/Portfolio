@@ -11,3 +11,7 @@ Thumbs.db
 
 # Dependencies (not needed for a static site, but just in case)
 node_modules/
+
+# Local document generation and visual QA
+/output/
+/tmp/

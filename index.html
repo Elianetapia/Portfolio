@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="home-page">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eliane Tapia — Product Designer</title>
-  <meta name="description" content="Product Designer with strong technical fluency. I don't just hand off specs — I work in the repo.">
+  <title>Eliane Tapia | Product Designer</title>
+  <meta name="description" content="I design clear, usable products for complex workflows.">
 
   <!-- Open Graph (WhatsApp, LinkedIn, Facebook, iMessage) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Eliane Tapia">
-  <meta property="og:title" content="Eliane Tapia — Product Designer">
-  <meta property="og:description" content="Product Designer with 5 years across FinTech, Sports Management & Health. I don't just hand off specs — I work in the repo.">
+  <meta property="og:title" content="Eliane Tapia | Product Designer">
+  <meta property="og:description" content="Thoughtful design. Built to ship. Clear, usable products for complex workflows.">
   <meta property="og:url" content="https://portfolio-eliane-exploration.vercel.app/">
   <meta property="og:image" content="https://portfolio-eliane-exploration.vercel.app/images/about-photo.png">
   <meta property="og:image:width" content="340">
@@ -20,141 +20,249 @@
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Eliane Tapia — Product Designer">
-  <meta name="twitter:description" content="Product Designer with 5 years across FinTech, Sports Management & Health. I don't just hand off specs — I work in the repo.">
+  <meta name="twitter:title" content="Eliane Tapia | Product Designer">
+  <meta name="twitter:description" content="Thoughtful design. Built to ship. Clear, usable products for complex workflows.">
   <meta name="twitter:image" content="https://portfolio-eliane-exploration.vercel.app/images/about-photo.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=portfolio-resume-23">
 </head>
-<body>
+<body class="home">
+  <a class="skip-link" href="#main" data-es="Saltar al contenido">Skip to content</a>
   <header class="topbar">
     <a class="wordmark" href="index.html">Eliane Tapia</a>
-    <nav class="nav">
-      <a href="#work" data-es="Trabajo">Work</a>
-      <a href="#about" data-es="Sobre mí">About</a>
+    <nav class="nav" aria-label="Main navigation" data-es-aria-label="Navegación principal">
+      <a href="#intro" data-es="Introducción">Intro</a>
+      <a href="#work" data-es="Proyectos">Projects</a>
+      <a href="#approach" data-es="Cómo trabajo">How I work</a>
       <a href="#contact" data-es="Contacto">Contact</a>
-      <div class="lang" role="group" aria-label="Language">
+    </nav>
+    <div class="header-actions">
+      <div class="lang" role="group" aria-label="Language" data-es-aria-label="Idioma">
         <button data-lang="en" class="active" aria-pressed="true">EN</button>
-        <span>/</span>
         <button data-lang="es" aria-pressed="false">ES</button>
       </div>
-    </nav>
+    </div>
   </header>
 
-  <main>
+  <main id="main">
     <!-- Hero -->
-    <section class="hero wrap">
+    <section class="hero wrap" id="intro">
+      <div class="hero-copy">
       <p class="eyebrow">ELIANE TAPIA SANTA-GADEA · PRODUCT DESIGNER</p>
-      <h1 class="hero-title" data-es="No solo entrego specs — entro al repositorio.">I don't just hand off specs — <span class="accent">I work in the repo.</span></h1>
-      <p class="lead" data-es="Product Designer con 5 años en FinTech, Sports Management y Health — recientemente enfocada en el mercado de EE.UU. Aporto fluidez técnica y flujos asistidos por IA, y colaboro de cerca con ingeniería para entregar productos eficientes y consistentes.">Product Designer with 5 years across FinTech, Sports Management &amp; Health — recently focused on the U.S. market. I bring strong technical fluency and AI-assisted workflows, and collaborate closely with engineering to ship efficient, consistent products.</p>
-      <p class="hero-links">
-        <a href="mailto:betzyeliane@gmail.com">betzyeliane@gmail.com</a>
-        <span class="sep">·</span>
-        <a href="https://www.linkedin.com/in/elianetapia" target="_blank" rel="noopener">LinkedIn</a>
-      </p>
+      <h1 class="hero-title"><span data-es="Diseño con intención.">Thoughtful design.</span><span class="accent" data-es="Listo para lanzar.">Built to ship.</span></h1>
+      <p class="lead" data-es="Diseño productos claros y fáciles de usar para flujos de trabajo complejos, desde plataformas financieras hasta experiencias móviles.">I design clear, usable products for complex workflows, from financial platforms to mobile experiences.</p>
+      <p class="hero-context" data-es="Con cinco años en diseño de producto, conecto las necesidades de las personas con lo que ingeniería puede construir. Colaboro desde las primeras ideas hasta el lanzamiento, con fluidez técnica y flujos asistidos por IA.">With five years in product design, I connect user needs with what engineering can build. I collaborate from early ideas through to launch, bringing technical fluency and AI-assisted workflows.</p>
+      <p class="hero-links"><a class="primary-link" href="#work" data-es="Explorar proyectos">Explore projects</a><a class="secondary-link" href="#contact" data-es="Contáctame">Contact me</a></p>
+      </div>
+      <figure class="hero-profile">
+        <div class="hero-photo">
+          <img loading="eager" decoding="async" src="images/about-photo.png" alt="Eliane Tapia" onerror="this.style.display='none'">
+        </div>
+        <figcaption data-es="Perú · Colaboración remota con equipos de EE.UU.">Peru · Working remotely with U.S. teams</figcaption>
+      </figure>
     </section>
 
-    <hr class="rule">
-
-    <!-- About -->
-    <section class="about section wrap" id="about">
-      <p class="label" data-es="SOBRE MÍ">ABOUT</p>
-      <div class="about-row">
-        <div class="about-photo">
-          <!-- Replace with images/about-photo.jpg -->
-          <img src="images/about-photo.png" alt="Eliane Tapia" onerror="this.style.display='none'">
+    <section class="skills-marquee" aria-label="Design skills" data-es-aria-label="Capacidades de diseño">
+      <div class="marquee-window">
+        <div class="marquee-track">
+          <ul class="marquee-list"><li data-es="Diseño de interacción">Interaction design</li><li data-es="Sistemas de diseño">Design systems</li><li data-es="Diseño atómico">Atomic design</li><li data-es="Apps móviles">Mobile apps</li><li data-es="Prototipado">Prototyping</li><li data-es="Diseño asistido por IA">AI-assisted design</li><li data-es="Diseño de producto">Product design</li><li data-es="Flujos de usuario">User flows</li><li>Figma</li><li>Codex</li><li>Claude</li></ul>
+          <ul class="marquee-list" aria-hidden="true"><li data-es="Diseño de interacción">Interaction design</li><li data-es="Sistemas de diseño">Design systems</li><li data-es="Diseño atómico">Atomic design</li><li data-es="Apps móviles">Mobile apps</li><li data-es="Prototipado">Prototyping</li><li data-es="Diseño asistido por IA">AI-assisted design</li><li data-es="Diseño de producto">Product design</li><li data-es="Flujos de usuario">User flows</li><li>Figma</li><li>Codex</li><li>Claude</li></ul>
         </div>
+      </div>
+    </section>
+
+    <div class="about-work section wrap">
+    <!-- About -->
+    <section class="about" id="about">
+      <h2 class="label" data-es="SOBRE MÍ">ABOUT</h2>
+      <div class="about-row">
         <div class="about-text">
-          <p class="about-lead" data-es="Soy Product Designer radicada en Perú, trabajando en remoto con equipos de EE.UU. En cinco años he diseñado en FinTech, Sports Management y Health & Wellness — siempre cerca del lado técnico del producto.">I'm a Product Designer based in Peru, working remotely with U.S. teams. Over five years I've designed across FinTech, Sports Management, and Health &amp; Wellness — always close to the technical side of the product.</p>
+          <div class="about-bio">
+          <p class="about-lead" data-es="Soy Product Designer radicada en Perú, trabajando en remoto con equipos de EE.UU. En cinco años he diseñado en FinTech, Sports Management y Health & Wellness. Siempre trabajo cerca del lado técnico del producto.">I'm a Product Designer based in Peru, working remotely with U.S. teams. Over five years I've designed across FinTech, Sports Management, and Health &amp; Wellness. I always stay close to the technical side of the product.</p>
           <p class="about-body" data-es="Lo que me distingue es la fluidez con que trabajo junto a ingeniería: entiendo APIs, endpoints y cómo se construyen los productos, y uso flujos asistidos por IA para ir del diseño hasta el código en producción. Me importan los productos simples, consistentes y realmente construibles.">What sets me apart is how fluently I work with engineering: I understand APIs, endpoints, and how products are built, and I use AI-assisted workflows to move from design all the way to shipped code. I care about products that are simple, consistent, and genuinely buildable.</p>
+
+          </div>
+          <div class="about-profile-details">
           <div class="facts">
-            <div><p class="fact-k" data-es="UBICACIÓN">BASED IN</p><p class="fact-v">Peru · Remote</p></div>
+            <div><p class="fact-k" data-es="UBICACIÓN">BASED IN</p><p class="fact-v" data-es="Perú · Remoto">Peru · Remote</p></div>
             <div><p class="fact-k" data-es="ENFOQUE">FOCUS</p><p class="fact-v" data-es="Mercado EE.UU.">U.S. market</p></div>
             <div><p class="fact-k" data-es="IDIOMAS">LANGUAGES</p><p class="fact-v">ES · EN</p></div>
           </div>
-        </div>
+    <section class="about-skills" aria-labelledby="skills-title">
+      <div class="skills-inner">
+        <h3 class="label" id="skills-title" data-es="SKILLS Y HERRAMIENTAS">SKILLS &amp; TOOLS</h3>
+        <ul class="skill-list">
+          <li data-es="Flujos de usuario">User flows</li>
+          <li data-es="Sistemas de diseño">Design systems</li>
+          <li data-es="Diseño asistido por IA">AI-assisted design</li>
+          <li>Figma</li>
+          <li>Pencil</li>
+          <li>shadcn/ui</li>
+          <li>React</li>
+          <li>Claude Code</li>
+          <li>Codex</li>
+          <li data-es="Diseño atómico">Atomic design</li>
+          <li>Android</li>
+          <li>iOS</li>
+          <li>Claude</li>
+          <li>Miro</li>
+          <li>Linear</li>
+          <li>Notion</li>
+          <li data-es="Diseño de interacción">Interaction design</li>
+          <li data-es="Prototipado">Prototyping</li>
+        </ul>
       </div>
     </section>
+          </div>
 
-    <hr class="rule">
+        </div>
+      </div>
+      <a class="about-resume" href="resumes/Eliane_Tapia_CV_ES.pdf" download><span data-es="Descargar CV">Download resume (ES)</span><span aria-hidden="true">↓</span></a>
+    </section>
 
     <!-- Selected work -->
-    <section class="work section wrap" id="work">
-      <p class="label" data-es="TRABAJO SELECCIONADO">SELECTED WORK</p>
+    <section class="work" id="work">
+      <h2 class="label" data-es="TRABAJO SELECCIONADO">SELECTED WORK</h2>
       <div class="cards">
         <a class="card" href="multi-location-commerce.html">
-          <div class="card-media"><img src="images/work-mlc.png" alt="" onerror="this.style.display='none'"></div>
-          <h3>Multi-Location Commerce &amp; Admin Platform</h3>
-          <p class="card-meta">HEALTH &amp; WELLNESS · U.S. MARKET</p>
-          <p class="card-desc" data-es="Un ecosistema end-to-end (admin, storefront, POS) que unifica múltiples clínicas, con estandarización central y precios/visibilidad por ubicación.">An end-to-end ecosystem (admin, storefront, POS) unifying multiple clinics, with central standardization plus per-location pricing and visibility.</p>
-          <p class="card-stack">Figma · shadcn/ui</p>
+          <div class="card-media"><img loading="lazy" decoding="async" src="images/mockups/mlc-context.jpg" width="1536" height="1024" alt="" onerror="this.style.display='none'"></div>
+          <div class="card-copy">
+          <span class="card-meta">Health &amp; wellness</span>
+          <h3 data-es="Comercio multisede">Multi-location commerce</h3>
+          <p class="card-desc" data-es="Una plataforma para administrar clínicas, compras online y puntos de venta.">One platform for clinic administration, online shopping, and point of sale.</p>
+          <div class="card-footer">
+            <p class="card-stack">Figma · shadcn/ui</p>
+            <span class="card-link" data-es="Ver más →">View more →</span>
+          </div>
+          </div>
         </a>
         <a class="card" href="mortgage-loan.html">
-          <div class="card-media"><img src="images/work-mortgage.png" alt="" onerror="this.style.display='none'"></div>
-          <h3>Mortgage Loan Management Platform</h3>
-          <p class="card-meta">FINTECH · U.S. MARKET</p>
-          <p class="card-desc" data-es="Rediseño de una plataforma financiera de alta densidad para loan officers y bancos — jerarquía más clara, patrones escalables, menos errores.">A redesign of a high-density financial platform for loan officers and banks — clearer hierarchy, scalable patterns, fewer errors.</p>
-          <p class="card-stack">Figma · shadcn/ui</p>
+          <div class="card-media"><img loading="lazy" decoding="async" src="images/mockups/mortgage-context.jpg" width="1536" height="1024" alt="" onerror="this.style.display='none'"></div>
+          <div class="card-copy">
+          <span class="card-meta">Fintech</span>
+          <h3 data-es="Gestión de préstamos hipotecarios">Mortgage loan management</h3>
+          <p class="card-desc" data-es="Flujos más claros y patrones reutilizables para oficiales de crédito y bancos.">Clearer workflows and reusable patterns for loan officers and banks.</p>
+          <div class="card-footer">
+            <p class="card-stack">Figma · shadcn/ui</p>
+            <span class="card-link" data-es="Ver más →">View more →</span>
+          </div>
+          </div>
         </a>
         <a class="card" href="youth-sports.html">
-          <div class="card-media"><img src="images/work-youth.png" alt="" onerror="this.style.display='none'"></div>
-          <h3>Youth Sports Audio Experience App</h3>
-          <p class="card-meta">SPORTS MANAGEMENT · U.S. MARKET</p>
-          <p class="card-desc" data-es="App móvil con presentaciones de jugadores generadas por IA para béisbol juvenil, y un flujo privacy-first diseñado para menores.">A mobile app with AI-generated player intros for youth baseball, and a privacy-first flow designed for minors.</p>
-          <p class="card-stack">Figma · iOS / Android</p>
+          <div class="card-media"><img loading="lazy" decoding="async" src="images/mockups/youth-context.jpg" width="1536" height="1024" alt="" onerror="this.style.display='none'"></div>
+          <div class="card-copy">
+          <span class="card-meta">Sports management</span>
+          <h3 data-es="Audio para deportes juveniles">Youth sports audio</h3>
+          <p class="card-desc" data-es="Presentaciones de jugadores generadas por IA, con configuración sencilla y privacidad integrada.">AI-generated player intros with simple setup and privacy built in.</p>
+          <div class="card-footer">
+            <p class="card-stack">Figma · iOS / Android</p>
+            <span class="card-link" data-es="Ver más →">View more →</span>
+          </div>
+          </div>
         </a>
         <a class="card" href="estimator.html">
-          <div class="card-media"><img src="images/work-estimator.png" alt="" onerror="this.style.display='none'"></div>
-          <h3>The Estimator — AI Project Estimation</h3>
-          <p class="card-meta">INTERNAL AI TOOLING</p>
-          <p class="card-desc" data-es="Diseño end-to-end en Pencil. Con asistencia de IA entregué ~52 commits y ~12 PRs al código de producción — mis propios diseños, en código.">End-to-end design in Pencil. With AI assistance I shipped ~52 commits and ~12 PRs to the production codebase — my own designs, in code.</p>
-          <p class="card-stack">Pencil · React · Claude Code</p>
+          <div class="card-media"><img loading="lazy" decoding="async" src="images/mockups/estimator-context.jpg" width="1536" height="1024" alt="" onerror="this.style.display='none'"></div>
+          <div class="card-copy">
+          <span class="card-meta">Internal AI tooling</span>
+          <h3 data-es="The Estimator">The Estimator</h3>
+          <p class="card-desc" data-es="Del brief a una estimación editable, con aportes de diseño y front-end.">From project brief to editable estimate, with design and front-end contributions.</p>
+          <div class="card-footer">
+            <p class="card-stack">Pencil · React · Claude Code</p>
+            <span class="card-link" data-es="Ver más →">View more →</span>
+          </div>
+          </div>
         </a>
       </div>
     </section>
 
-    <!-- Design → Code band -->
-    <section class="band">
+    </div>
+
+    <!-- How I work -->
+    <section class="band approach" id="approach" aria-labelledby="approach-title">
       <div class="section wrap">
-        <p class="label">DESIGN → CODE, WITH AI</p>
-        <h2 data-es="Diseño — y lo llevo hasta el repositorio.">I design — and I take it into the repo.</h2>
+        <p class="label" data-es="CÓMO TRABAJO">HOW I WORK</p>
+        <h2 id="approach-title"><span data-es="Del problema al diseño.">From problem to design.</span> <span class="accent" data-es="Del diseño a producción.">From design to production.</span></h2>
+        <p class="approach-intro" data-es="Conecto flujos de trabajo, interfaces y código en colaboración con producto e ingeniería.">I connect workflows, interfaces, and code in collaboration with product and engineering.</p>
         <div class="points">
-          <div class="point">
-            <span class="arrow">→</span>
-            <h4 data-es="Certificación CCA-F">CCA-F certified</h4>
-            <p data-es="Fluidez trabajando con herramientas de IA — manejo de contexto, prompting, MCP y trade-offs de modelo/costo.">Fluent in working with AI tooling — context management, prompting, MCP, and model/cost trade-offs.</p>
-          </div>
-          <div class="point">
-            <span class="arrow">→</span>
-            <h4 data-es="Un pipeline real">A real pipeline</h4>
-            <p data-es="Construí un flujo Figma → MCP → Claude Code que convierte specs en componentes en producción.">I built a Figma → MCP → Claude Code workflow that turns specs into shipped components.</p>
-          </div>
-          <div class="point">
-            <span class="arrow">→</span>
-            <h4 data-es="Hasta el código">All the way to code</h4>
-            <p data-es="Cuando el proyecto lo necesita, llego al código, los PRs y el review — junto a ingeniería, nunca reemplazándola.">When a project needs it, I reach code, PRs, and review — alongside engineering, never replacing it.</p>
-          </div>
+          <article class="point">
+            <span class="approach-number">01 · UX</span>
+            <span class="approach-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg></span>
+            <h3><span class="accent" data-es="Entender el flujo">Understand the workflow</span><span data-es="antes de diseñar.">before designing.</span></h3>
+            <p data-es="Descompongo flujos complejos junto al equipo para entender qué necesita hacer cada persona y dónde aparece la fricción.">I break down complex workflows with the team to understand what each person needs to do and where friction appears.</p>
+            <ul class="approach-details">
+              <li data-es="Mapeo de flujos">Workflow mapping</li>
+              <li data-es="Roles y necesidades">Roles and needs</li>
+              <li data-es="Definición del alcance">Scope definition</li>
+              <li data-es="Simplificación de flujos">Workflow simplification</li>
+            </ul>
+            <ul class="approach-tags"><li data-es="Flujos de usuario">User flows</li><li data-es="Alcance">Scope</li><li>Miro</li><li>Linear</li><li>Notion</li></ul>
+          </article>
+          <article class="point">
+            <span class="approach-number">02 · UI</span>
+            <span class="approach-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 10h16M10 10v10"/></svg></span>
+            <h3><span class="accent" data-es="Interfaces claras">Clear interfaces</span><span data-es="para productos complejos.">for complex products.</span></h3>
+            <p data-es="Organizo información y acciones en interfaces claras, con patrones reutilizables que mantienen la consistencia a medida que el producto crece.">I organize information and actions into clear interfaces, with reusable patterns that keep the product consistent as it grows.</p>
+            <ul class="approach-details">
+              <li data-es="Jerarquía de información">Information hierarchy</li>
+              <li data-es="Componentes reutilizables">Reusable components</li>
+              <li data-es="Diseño web y móvil">Web and mobile design</li>
+              <li data-es="Diseño de interacción y prototipado">Interaction design and prototyping</li>
+            </ul>
+            <ul class="approach-tags"><li>Figma</li><li>Pencil</li><li>shadcn/ui</li><li data-es="Diseño atómico">Atomic design</li><li>Android</li><li>iOS</li><li data-es="Diseño de interacción">Interaction design</li><li data-es="Prototipado">Prototyping</li></ul>
+          </article>
+          <article class="point">
+            <span class="approach-number">03 · DEV</span>
+            <span class="approach-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-12-2 18"/></svg></span>
+            <h3><span class="accent" data-es="Diseñar con ingeniería">Design with engineering</span><span data-es="hasta producción.">through to production.</span></h3>
+            <p data-es="Trabajo de cerca con ingeniería y uso flujos asistidos por IA. Cuando el proyecto lo necesita, contribuyo código, PRs y revisiones.">I work closely with engineering and use AI-assisted workflows. When the project needs it, I contribute code, PRs, and reviews.</p>
+            <ul class="approach-details">
+              <li data-es="De Figma al código con MCP">Figma to code with MCP</li>
+              <li data-es="Implementación asistida por IA">AI-assisted implementation</li>
+              <li data-es="Iteración sobre el producto real">Iteration on the working product</li>
+              <li data-es="PRs y revisiones de código">PRs and code reviews</li>
+            </ul>
+            <ul class="approach-tags"><li>React</li><li>Claude Code</li><li>Codex</li><li>Claude</li><li>MCP</li><li data-es="Diseño asistido por IA">AI-assisted design</li></ul>
+          </article>
         </div>
+        <p class="approach-note" data-es="Certificación CCA-F · Manejo de contexto, prompting, MCP y decisiones de modelo y costo.">CCA-F certified · Context management, prompting, MCP, and model and cost trade-offs.</p>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="contact section wrap" id="contact">
-      <p class="label">GET IN TOUCH</p>
-      <h2 data-es="Construyamos algo eficiente.">Let's build something efficient.</h2>
-      <p class="contact-links">
-        <a href="mailto:betzyeliane@gmail.com">betzyeliane@gmail.com</a>
-        <span class="sep">·</span>
-        <a href="https://www.linkedin.com/in/elianetapia" target="_blank" rel="noopener">linkedin.com/in/elianetapia</a>
-      </p>
-    </section>
   </main>
 
-  <footer class="site-footer">© <span id="yr"></span> Eliane Tapia Santa-Gadea · elianetapia.com</footer>
+  <footer class="contact-footer wrap" id="contact" aria-labelledby="footer-title">
+    <div class="footer-grid">
+      <div class="footer-invitation">
+        <h2 id="footer-title"><span data-es="¿Tienes un proyecto en mente?">Have a project in mind?</span> <span class="accent" data-es="Diseñémoslo juntos.">Let's design it together.</span></h2>
+        <p data-es="Conversemos sobre lo que quieres construir.">Let's talk about what you want to build.</p>
+        <div class="footer-action-group">
+        <div class="footer-actions">
+          <a class="primary-link" href="mailto:betzyeliane@gmail.com" data-es="Escríbeme">Write me an email</a>
+          <a class="secondary-link" href="https://www.linkedin.com/in/elianetapia" target="_blank" rel="noopener">LinkedIn →</a>
+        </div>
+        <a class="about-resume footer-resume-button" href="resumes/Eliane_Tapia_CV_ES.pdf" download><span data-es="Descargar CV">Download resume (ES)</span><span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <nav class="footer-column" aria-label="Footer navigation" data-es-aria-label="Navegación del pie de página">
+        <h3 class="label" data-es="NAVEGACIÓN">NAVIGATION</h3>
+        <a href="#intro" data-es="Introducción">Intro</a>
+        <a href="#work" data-es="Proyectos">Projects</a>
+        <a href="#approach" data-es="Cómo trabajo">How I work</a>
+        <a href="#contact" data-es="Contacto">Contact</a>
+      </nav>
+      <div class="footer-column">
+        <h3 class="label" data-es="CONTACTO">CONTACT</h3>
+        <a href="mailto:betzyeliane@gmail.com">betzyeliane@gmail.com</a>
+        <a href="https://www.linkedin.com/in/elianetapia" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="footer-resume" href="resumes/Eliane_Tapia_CV_ES.pdf" download data-es="Descargar CV →">Download resume (ES) →</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="yr"></span> Eliane Tapia Santa-Gadea · elianetapia.com</div>
+  </footer>
   <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=portfolio-resume-23"></script>
 </body>
 </html>
