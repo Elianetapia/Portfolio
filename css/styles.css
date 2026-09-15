@@ -462,8 +462,9 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--ink); outline-o
 .home .approach .point::before {
   content: "";
   position: absolute;
-  inset: 0 0 auto;
+  inset: 1px 14px auto;
   height: 3px;
+  border-radius: 999px;
   background: var(--process-color);
   transform: scaleX(0);
   transform-origin: left;
