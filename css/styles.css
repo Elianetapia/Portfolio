@@ -421,6 +421,21 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--ink); outline-o
 .home .work .card-footer { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; width: 100%; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); }
 .home .work .card-footer .card-stack { min-width: 0; }
 .home .work .card-link { flex-shrink: 0; margin-top: 0; padding-top: 0; font-size: 11px; white-space: nowrap; }
+.home .work .card { transition: transform .28s ease, border-color .28s ease, box-shadow .28s ease; }
+.home .work .card-media img,
+.home .work .card-link { transition: transform .28s ease; }
+.home .work .card:is(:hover, :focus-visible) {
+  transform: translateY(-3px);
+  border-color: var(--line);
+  box-shadow: 0 12px 28px rgba(33, 29, 24, .08);
+}
+.home .work .card:is(:hover, :focus-visible) .card-media img { transform: scale(1.015); }
+.home .work .card:is(:hover, :focus-visible) .card-link { transform: translateX(2px); }
+@media (prefers-reduced-motion: reduce) {
+  .home .work .card:is(:hover, :focus-visible),
+  .home .work .card:is(:hover, :focus-visible) .card-media img,
+  .home .work .card:is(:hover, :focus-visible) .card-link { transform: none; }
+}
 .about-bio, .about-profile-details { min-width: 0; }
 @media (min-width: 1001px) and (prefers-reduced-motion: no-preference) {
   .about-work { scroll-snap-align: start; }
@@ -448,7 +463,52 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--ink); outline-o
 @media (min-width: 961px) {
   .home .approach .point { display: grid; grid-row: span 6; grid-template-rows: subgrid; row-gap: 0; }
   .home .approach .approach-details { margin-top: 0; }
-  .home .approach .approach-tags { align-content: start; align-items: start; }
+.home .approach .approach-tags { align-content: start; align-items: start; }
+}
+
+/* A process card reveals its accent and detail state on hover or keyboard focus. */
+.home .approach .point {
+  --process-color: var(--accent);
+  position: relative;
+  overflow: hidden;
+  transition: transform .28s ease, border-color .28s ease, box-shadow .28s ease;
+}
+.home .approach .point:nth-child(1) { --process-color: #71699a; }
+.home .approach .point:nth-child(3) { --process-color: #557b64; }
+.home .approach .point::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: var(--process-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .3s ease;
+}
+.home .approach .approach-icon,
+.home .approach .approach-details li {
+  transition: transform .28s ease, background-color .28s ease, box-shadow .28s ease;
+}
+.home .approach .point:is(:hover, :focus-visible) {
+  transform: translateY(-7px);
+  border-color: var(--process-color);
+  box-shadow: 0 20px 44px rgba(33, 29, 24, .12);
+}
+.home .approach .point:is(:hover, :focus-visible)::before { transform: scaleX(1); }
+.home .approach .point:is(:hover, :focus-visible) .approach-icon {
+  transform: translateY(-2px) scale(1.06);
+  box-shadow: 0 8px 18px rgba(33, 29, 24, .09);
+}
+.home .approach .point:is(:hover, :focus-visible) .approach-details li {
+  transform: translateX(3px);
+  background: var(--paper);
+  box-shadow: 0 4px 12px rgba(33, 29, 24, .06);
+}
+.home .approach .point:focus-visible { outline: 3px solid var(--process-color); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) {
+  .home .approach .point:is(:hover, :focus-visible),
+  .home .approach .point:is(:hover, :focus-visible) .approach-icon,
+  .home .approach .point:is(:hover, :focus-visible) .approach-details li { transform: none; }
 }
 
 /* Contact invitation and supporting navigation. */

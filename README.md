@@ -66,10 +66,12 @@ The toggle in the top-right is wired up: any text with a `data-es="..."` attribu
 
 ## Resume downloads
 
-The homepage's About and Contact sections link to `resumes/Eliane_Tapia_CV_ES.pdf`.
-The English interface labels this download `(ES)` because the PDF is in Spanish.
-The accompanying Markdown file preserves the editable Spanish content. The PDF follows
-the updated English resume's single-column structure and includes the supplied photo.
+The homepage's About and Contact downloads use the active language: EN downloads
+`resumes/Eliane_Tapia_CV_EN.pdf`, and ES downloads `resumes/Eliane_Tapia_CV_ES.pdf`.
+Both are the latest one-page PDFs supplied by Eliane. The language preference is
+remembered across pages, so the downloaded CV matches the language on screen.
+The accompanying Spanish Markdown file is an older editable draft, not the source
+of the current PDF.
 
 ## Current homepage
 

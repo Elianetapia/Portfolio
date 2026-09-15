@@ -29,6 +29,11 @@
     nodes.forEach(function (el) {
       el.textContent = el.getAttribute(lang === "es" ? "data-es" : "data-en");
     });
+    document.querySelectorAll("[data-cv-en][data-cv-es]").forEach(function (link) {
+      var path = link.getAttribute("data-cv-" + lang);
+      link.setAttribute("href", path);
+      link.setAttribute("download", path.split("/").pop());
+    });
     document.documentElement.lang = lang === "es" ? "es" : "en";
     document.querySelectorAll(".lang button").forEach(function (b) {
       b.classList.toggle("active", b.getAttribute("data-lang") === lang);
