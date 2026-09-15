@@ -455,6 +455,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--ink); outline-o
 .home .approach .point {
   --process-color: var(--accent);
   position: relative;
+  overflow: hidden;
   transition: transform .28s ease, border-color .28s ease, box-shadow .28s ease;
 }
 .home .approach .point:nth-child(1) { --process-color: #71699a; }
@@ -462,9 +463,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--ink); outline-o
 .home .approach .point::before {
   content: "";
   position: absolute;
-  inset: 1px 14px auto;
+  inset: 0 0 auto;
   height: 3px;
-  border-radius: 999px;
   background: var(--process-color);
   transform: scaleX(0);
   transform-origin: left;
