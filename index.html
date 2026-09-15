@@ -28,15 +28,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=portfolio-project-motion-28">
+  <link rel="stylesheet" href="css/mobile.css?v=1">
 </head>
 <body class="home">
   <a class="skip-link" href="#main" data-es="Saltar al contenido">Skip to content</a>
   <header class="topbar">
     <a class="wordmark" href="index.html">Eliane Tapia</a>
     <nav class="nav" aria-label="Main navigation" data-es-aria-label="Navegación principal">
-      <a href="#intro" data-es="Introducción">Intro</a>
+      <a href="#intro" data-es="Intro">Intro</a>
+      <a class="mobile-only-tab" href="#about" data-es="Sobre mí">About</a>
       <a href="#work" data-es="Proyectos">Projects</a>
-      <a href="#approach" data-es="Cómo trabajo">How I work</a>
+      <a href="#approach" data-es="Proceso">Process</a>
       <a href="#contact" data-es="Contacto">Contact</a>
     </nav>
     <div class="header-actions">
@@ -51,7 +53,7 @@
     <!-- Hero -->
     <section class="hero wrap" id="intro">
       <div class="hero-copy">
-      <p class="eyebrow">ELIANE TAPIA SANTA-GADEA · PRODUCT DESIGNER</p>
+      <p class="eyebrow" data-es="Diseñadora de producto | Diseñadora UX/UI">Product Designer | UX/UI Designer</p>
       <h1 class="hero-title"><span data-es="Diseño con intención.">Thoughtful design.</span><span class="accent" data-es="Listo para lanzar.">Built to ship.</span></h1>
       <p class="lead" data-es="Diseño productos claros y fáciles de usar para flujos de trabajo complejos, desde plataformas financieras hasta experiencias móviles.">I design clear, usable products for complex workflows, from financial platforms to mobile experiences.</p>
       <p class="hero-context" data-es="Con cinco años en diseño de producto, conecto las necesidades de las personas con lo que ingeniería puede construir. Colaboro desde las primeras ideas hasta el lanzamiento, con fluidez técnica y flujos asistidos por IA.">With five years in product design, I connect user needs with what engineering can build. I collaborate from early ideas through to launch, bringing technical fluency and AI-assisted workflows.</p>
@@ -248,9 +250,10 @@
       </div>
       <nav class="footer-column" aria-label="Footer navigation" data-es-aria-label="Navegación del pie de página">
         <h3 class="label" data-es="NAVEGACIÓN">NAVIGATION</h3>
-        <a href="#intro" data-es="Introducción">Intro</a>
+        <a href="#intro" data-es="Intro">Intro</a>
+        <a class="mobile-only-tab" href="#about" data-es="Sobre mí">About</a>
         <a href="#work" data-es="Proyectos">Projects</a>
-        <a href="#approach" data-es="Cómo trabajo">How I work</a>
+        <a href="#approach" data-es="Proceso">Process</a>
         <a href="#contact" data-es="Contacto">Contact</a>
       </nav>
       <div class="footer-column">
@@ -264,5 +267,6 @@
   </footer>
   <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
   <script src="js/main.js?v=portfolio-resume-24"></script>
+  <script src="js/mobile.js?v=1"></script>
 </body>
 </html>
