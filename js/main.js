@@ -116,6 +116,7 @@
 
 /* Highlight the current section without changing the URL while scrolling. */
 (function () {
+  if (window.innerWidth <= 760) return; // Mobile uses horizontal panels.
   var header = document.querySelector('.topbar');
   var links = Array.from(document.querySelectorAll('.topbar .nav > a'));
   var isHome = document.body.classList.contains('home');
