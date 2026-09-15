@@ -425,12 +425,12 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--ink); outline-o
 .home .work .card-media img,
 .home .work .card-link { transition: transform .28s ease; }
 .home .work .card:is(:hover, :focus-visible) {
-  transform: translateY(-7px);
+  transform: translateY(-3px);
   border-color: var(--line);
-  box-shadow: 0 20px 44px rgba(33, 29, 24, .12);
+  box-shadow: 0 12px 28px rgba(33, 29, 24, .08);
 }
-.home .work .card:is(:hover, :focus-visible) .card-media img { transform: scale(1.03); }
-.home .work .card:is(:hover, :focus-visible) .card-link { transform: translateX(3px); }
+.home .work .card:is(:hover, :focus-visible) .card-media img { transform: scale(1.015); }
+.home .work .card:is(:hover, :focus-visible) .card-link { transform: translateX(2px); }
 @media (prefers-reduced-motion: reduce) {
   .home .work .card:is(:hover, :focus-visible),
   .home .work .card:is(:hover, :focus-visible) .card-media img,
