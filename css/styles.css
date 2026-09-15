@@ -203,8 +203,8 @@ section[id] { scroll-margin-top: 160px; }
 .wordmark { font-size: 20px; font-weight: 600; letter-spacing: -.04em; }
 .nav { margin-left: auto; }
 .header-actions { display: flex; align-items: center; }
-.lang { padding: 4px; gap: 2px; border-radius: 10px; background: var(--paper); }
-.lang button { min-width: 44px; min-height: 44px; padding: 10px; border-radius: 6px; color: var(--mid); }
+.lang { height: 48px; padding: 4px; gap: 2px; border-radius: 10px; background: var(--paper); }
+.lang button { min-width: 44px; height: 38px; min-height: 38px; padding: 8px 10px; border-radius: 6px; color: var(--mid); }
 .lang button.active { background: var(--accent); color: #fff; }
 .cv-button { min-height: 48px; padding: 12px 8px; border: 1px solid transparent; border-radius: 8px; background: transparent; color: var(--soft); font: 500 15px var(--body); line-height: 1.6; }
 .cv-button:disabled { cursor: not-allowed; opacity: .65; }
@@ -383,11 +383,11 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--ink); outline-o
     scroll-snap-type: y proximity;
     scroll-padding-top: var(--header-height, 90px);
   }
-  .home .hero, .home .work, .home .about, .home .approach, .home .contact {
+  .home .hero, .home .work, .home .about, .home .approach, .home .contact-footer {
     scroll-snap-align: start;
     scroll-margin-top: 0;
   }
-  .home .work, .home .about, .home .approach, .home .contact {
+  .home .work, .home .about, .home .approach, .home .contact-footer {
     min-height: calc(100svh - var(--header-height, 90px));
   }
   .home .site-footer { scroll-snap-align: end; }
@@ -514,6 +514,19 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--ink); outline-o
 /* Contact invitation and supporting navigation. */
 .contact-footer { padding-top: clamp(80px, 8vw, 112px); padding-bottom: clamp(48px, 5vw, 72px); scroll-margin-top: calc(var(--header-height, 90px) + 24px); }
 .footer-grid { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(0, .65fr) minmax(0, 1fr); gap: 40px; border-top: 1px solid var(--line); padding: clamp(64px, 6vw, 88px) 0; }
+@media (min-width: 761px) {
+  .home .contact-footer {
+    min-height: 100svh;
+    scroll-margin-top: var(--header-height, 90px);
+    display: flex;
+    flex-direction: column;
+  }
+  .home .contact-footer .footer-grid { flex: 1; }
+  .home .footer-grid { border-top: 0; }
+}
+@media (min-width: 1001px) and (prefers-reduced-motion: no-preference) {
+  .home .contact-footer { scroll-margin-top: 0; }
+}
 .footer-invitation h2 { max-width: 22ch; font-size: clamp(28px, 3vw, 38px); line-height: 1.2; letter-spacing: -.035em; }
 .footer-invitation h2 > span { display: block; }
 .footer-invitation p { margin: 16px 0 22px; font-size: 14px; color: var(--soft); }
