@@ -2,7 +2,7 @@
 **PRODUCT DESIGNER**
 
 ## Contacto
-Huancayo, Perú<br>
+Lima, Perú<br>
 betzyeliane@gmail.com<br>
 +51 999 846 464<br>
 [LinkedIn](https://www.linkedin.com/in/elianetapia) · [Portfolio](https://elianetapia.com)
